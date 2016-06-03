@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6013DA374FBF00664587D81C4F26844BBD90F984",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6013DA374FBF00664587D81C4F26844BBD90F984" : 0,
+    "41FB47087DFF06E1E4A77B936CA3CFF56E7E0142" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "47374616-7048-4546-825C-C33F8F0A950E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6013DA374FBF00664587D81C4F26844BBD90F984" : "ProPadGIT",
+    "41FB47087DFF06E1E4A77B936CA3CFF56E7E0142" : "..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ProPad",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ProPad\/ProPad.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/peterparker007\/ImpDat..git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "41FB47087DFF06E1E4A77B936CA3CFF56E7E0142"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/202.131.115.109\/root\/propad-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6013DA374FBF00664587D81C4F26844BBD90F984"
+    }
+  ]
+}

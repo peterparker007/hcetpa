@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="CustomerDetailTVC">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="middlebox" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-mB-GLe">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0h5-mB-GLe" secondAttribute="height" multiplier="340:99" id="NMW-HF-zT9"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KB8-9p-XjL" customClass="AsyncImageView">
+                        <rect key="frame" x="8" y="8" width="78" height="69"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="KB8-9p-XjL" secondAttribute="height" multiplier="1:1" constant="9" id="zIq-oE-ZC7"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsF-hI-GJa">
+                        <rect key="frame" x="91" y="8" width="90" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Upload Photo" backgroundImage="browser-button">
+                            <color key="titleColor" red="0.20273042929999999" green="0.20273042929999999" blue="0.20273042929999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nf-FY-ADQ">
+                        <rect key="frame" x="91" y="42" width="142" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Sold Customer" backgroundImage="input-dropdown">
+                            <color key="titleColor" red="0.20273042929999999" green="0.20273042929999999" blue="0.20273042929999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribbon-yellow" translatesAutoresizingMaskIntoConstraints="NO" id="Ukw-3J-UHI">
+                        <rect key="frame" x="239" y="0.0" width="101" height="79"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="KB8-9p-XjL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0xW-BA-hVq"/>
+                    <constraint firstAttribute="bottom" secondItem="0h5-mB-GLe" secondAttribute="bottom" id="7BM-C1-Czn"/>
+                    <constraint firstItem="rsF-hI-GJa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Idg-fk-g0s"/>
+                    <constraint firstItem="KB8-9p-XjL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Lmu-2X-fSf"/>
+                    <constraint firstAttribute="trailing" secondItem="Ukw-3J-UHI" secondAttribute="trailing" id="NRX-t9-YNs"/>
+                    <constraint firstAttribute="trailing" secondItem="0h5-mB-GLe" secondAttribute="trailing" id="RTf-Xf-nsm"/>
+                    <constraint firstItem="0h5-mB-GLe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cVv-kf-lhd"/>
+                    <constraint firstItem="0h5-mB-GLe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fZK-mK-7bM"/>
+                    <constraint firstItem="0h5-mB-GLe" firstAttribute="top" secondItem="KB8-9p-XjL" secondAttribute="bottom" constant="-77" id="gF6-kE-lCj"/>
+                    <constraint firstItem="0nf-FY-ADQ" firstAttribute="leading" secondItem="KB8-9p-XjL" secondAttribute="trailing" constant="5" id="gmv-lE-dWr"/>
+                    <constraint firstItem="rsF-hI-GJa" firstAttribute="leading" secondItem="KB8-9p-XjL" secondAttribute="trailing" constant="5" id="inR-MT-E2h"/>
+                    <constraint firstItem="0nf-FY-ADQ" firstAttribute="top" secondItem="rsF-hI-GJa" secondAttribute="bottom" constant="8" id="lrD-p9-2Dc"/>
+                    <constraint firstItem="Ukw-3J-UHI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zER-hZ-Q0c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnBrower" destination="rsF-hI-GJa" id="VrL-9H-nhT"/>
+                <outlet property="btnCustomerType" destination="0nf-FY-ADQ" id="U9C-QA-L4n"/>
+                <outlet property="imgCustomerImage" destination="Ukw-3J-UHI" id="Rl5-Sb-p8P"/>
+                <outlet property="imgView" destination="KB8-9p-XjL" id="MTe-9b-A7f"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="263"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="browser-button" width="90" height="26"/>
+        <image name="input-dropdown" width="142" height="30"/>
+        <image name="middlebox" width="94" height="30"/>
+        <image name="ribbon-yellow" width="101" height="79"/>
+    </resources>
+</document>

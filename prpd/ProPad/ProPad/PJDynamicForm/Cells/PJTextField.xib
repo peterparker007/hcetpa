@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PJTextField" rowHeight="60" id="i1K-qb-4rV" customClass="PJTextField">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i1K-qb-4rV" id="Rod-1c-rmN">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASS-68-pAv" customClass="CustomView">
+                        <rect key="frame" x="4" y="0.0" width="7" height="51"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCu-uo-n7i" userLabel="Title">
+                        <rect key="frame" x="14" y="1" width="61" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CYi-Sb-Es1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CYi-Sb-Es1"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="7As-u5-gmA">
+                        <rect key="frame" x="4" y="7" width="7" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="JN4-g6-CBf"/>
+                            <constraint firstAttribute="width" constant="7" id="JTD-pk-d4t"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TextField" minimumFontSize="17" background="inputbox-big" translatesAutoresizingMaskIntoConstraints="NO" id="MW8-wm-aiN">
+                        <rect key="frame" x="12" y="23" width="304" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="304" id="HPX-JF-vUL"/>
+                            <constraint firstAttribute="height" constant="28" id="fxB-bC-023"/>
+                            <constraint firstAttribute="width" constant="304" id="h17-J3-Dp7"/>
+                            <constraint firstAttribute="height" constant="28" id="iC4-2K-ADc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HPX-JF-vUL"/>
+                                <exclude reference="fxB-bC-023"/>
+                                <exclude reference="h17-J3-Dp7"/>
+                                <exclude reference="iC4-2K-ADc"/>
+                            </mask>
+                        </variation>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MW8-wm-aiN" firstAttribute="top" secondItem="eCu-uo-n7i" secondAttribute="bottom" constant="2" id="0E4-se-uCP"/>
+                    <constraint firstItem="MW8-wm-aiN" firstAttribute="height" secondItem="Rod-1c-rmN" secondAttribute="height" multiplier="28:60" id="3p0-12-0hL"/>
+                    <constraint firstAttribute="trailing" secondItem="ASS-68-pAv" secondAttribute="trailing" constant="4" id="6qp-ix-GJ8"/>
+                    <constraint firstItem="7As-u5-gmA" firstAttribute="top" secondItem="Rod-1c-rmN" secondAttribute="top" constant="7" id="96y-yi-DQ0"/>
+                    <constraint firstItem="MW8-wm-aiN" firstAttribute="top" secondItem="eCu-uo-n7i" secondAttribute="bottom" constant="2" id="9Ga-Jo-M7e"/>
+                    <constraint firstAttribute="trailing" secondItem="MW8-wm-aiN" secondAttribute="trailing" constant="4" id="E2Q-x4-IzW"/>
+                    <constraint firstItem="MW8-wm-aiN" firstAttribute="leading" secondItem="Rod-1c-rmN" secondAttribute="leading" constant="12" id="JUB-Kb-IeD"/>
+                    <constraint firstItem="ASS-68-pAv" firstAttribute="leading" secondItem="Rod-1c-rmN" secondAttribute="leading" constant="4" id="LQf-q3-Je1"/>
+                    <constraint firstItem="eCu-uo-n7i" firstAttribute="trailing" secondItem="Rod-1c-rmN" secondAttribute="trailingMargin" constant="4" id="MMN-eo-h1s"/>
+                    <constraint firstItem="eCu-uo-n7i" firstAttribute="top" secondItem="Rod-1c-rmN" secondAttribute="top" constant="1" id="PyB-US-Vig"/>
+                    <constraint firstItem="7As-u5-gmA" firstAttribute="leading" secondItem="Rod-1c-rmN" secondAttribute="leading" constant="4" id="RSu-DE-F2I"/>
+                    <constraint firstAttribute="bottom" secondItem="MW8-wm-aiN" secondAttribute="bottom" constant="7" id="V0E-Vw-DKu"/>
+                    <constraint firstItem="eCu-uo-n7i" firstAttribute="leading" secondItem="7As-u5-gmA" secondAttribute="trailing" constant="3" id="YxC-fY-0s2"/>
+                    <constraint firstItem="eCu-uo-n7i" firstAttribute="leading" secondItem="MW8-wm-aiN" secondAttribute="leading" constant="2" id="aD5-S4-W5x"/>
+                    <constraint firstItem="ASS-68-pAv" firstAttribute="top" secondItem="Rod-1c-rmN" secondAttribute="top" id="cZ4-rb-aJH"/>
+                    <constraint firstAttribute="bottom" secondItem="ASS-68-pAv" secondAttribute="bottom" constant="8" id="dai-aS-KKx"/>
+                    <constraint firstAttribute="trailing" secondItem="eCu-uo-n7i" secondAttribute="trailing" constant="4" id="diW-pM-6ii"/>
+                    <constraint firstAttribute="trailing" secondItem="MW8-wm-aiN" secondAttribute="trailing" constant="4" id="frs-FZ-4iK"/>
+                    <constraint firstItem="MW8-wm-aiN" firstAttribute="width" secondItem="Rod-1c-rmN" secondAttribute="width" multiplier="304:320" id="gMe-3Q-EOU"/>
+                    <constraint firstItem="MW8-wm-aiN" firstAttribute="leading" secondItem="Rod-1c-rmN" secondAttribute="leading" constant="12" id="kx3-vV-j5X"/>
+                    <constraint firstItem="MW8-wm-aiN" firstAttribute="top" secondItem="eCu-uo-n7i" secondAttribute="bottom" constant="2" id="nfk-Ln-2dO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="MW8-wm-aiN" secondAttribute="bottom" constant="-1" id="pnQ-4p-6Ya"/>
+                    <constraint firstAttribute="trailing" secondItem="MW8-wm-aiN" secondAttribute="trailing" constant="4" id="qEA-DR-49Y"/>
+                    <constraint firstItem="MW8-wm-aiN" firstAttribute="leading" secondItem="Rod-1c-rmN" secondAttribute="leading" constant="12" id="rl2-ri-fbd"/>
+                    <constraint firstItem="eCu-uo-n7i" firstAttribute="leading" secondItem="Rod-1c-rmN" secondAttribute="leadingMargin" constant="6" id="rlq-qf-5wh"/>
+                    <constraint firstItem="MW8-wm-aiN" firstAttribute="trailing" secondItem="Rod-1c-rmN" secondAttribute="trailingMargin" constant="4" id="u44-2T-DTv"/>
+                    <constraint firstItem="eCu-uo-n7i" firstAttribute="top" secondItem="Rod-1c-rmN" secondAttribute="topMargin" constant="-7" id="wVT-t9-G5F"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="MMN-eo-h1s"/>
+                        <exclude reference="aD5-S4-W5x"/>
+                        <exclude reference="rlq-qf-5wh"/>
+                        <exclude reference="wVT-t9-G5F"/>
+                        <exclude reference="9Ga-Jo-M7e"/>
+                        <exclude reference="E2Q-x4-IzW"/>
+                        <exclude reference="JUB-Kb-IeD"/>
+                        <exclude reference="V0E-Vw-DKu"/>
+                        <exclude reference="kx3-vV-j5X"/>
+                        <exclude reference="nfk-Ln-2dO"/>
+                        <exclude reference="pnQ-4p-6Ya"/>
+                        <exclude reference="qEA-DR-49Y"/>
+                        <exclude reference="u44-2T-DTv"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="MW8-wm-aiN" id="kym-t2-Y64"/>
+                <outlet property="title" destination="eCu-uo-n7i" id="l3B-nA-U5A"/>
+            </connections>
+            <point key="canvasLocation" x="254" y="592"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bullet" width="7" height="7"/>
+        <image name="inputbox-big" width="340" height="30"/>
+    </resources>
+</document>

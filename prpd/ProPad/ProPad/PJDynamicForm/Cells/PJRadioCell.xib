@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PJRadioCell" rowHeight="55" id="KGk-i7-Jjw" customClass="PJRadioCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="mwb-On-dUo">
+                        <rect key="frame" x="4" y="7" width="7" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="Bjl-Lb-3IH"/>
+                            <constraint firstAttribute="width" constant="7" id="QeG-Ce-X5G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5z-YK-a64" userLabel="Title">
+                        <rect key="frame" x="14" y="1" width="302" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="flE-hn-veM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="flE-hn-veM"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y5z-YK-a64" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="2Fv-aj-b4z"/>
+                    <constraint firstAttribute="trailing" secondItem="y5z-YK-a64" secondAttribute="trailing" constant="4" id="9el-oV-NxX"/>
+                    <constraint firstItem="mwb-On-dUo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="JX3-ua-Sgb"/>
+                    <constraint firstItem="y5z-YK-a64" firstAttribute="leading" secondItem="mwb-On-dUo" secondAttribute="trailing" constant="3" id="qJy-Sr-Fj1"/>
+                    <constraint firstItem="mwb-On-dUo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="tYc-iB-FgT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="title" destination="y5z-YK-a64" id="rpa-YG-bTI"/>
+            </connections>
+            <point key="canvasLocation" x="393" y="163.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bullet" width="7" height="7"/>
+    </resources>
+</document>

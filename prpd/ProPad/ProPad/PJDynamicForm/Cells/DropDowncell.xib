@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="59" id="KGk-i7-Jjw" customClass="DropDowncell">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHD-GL-iyF" userLabel="Title">
+                        <rect key="frame" x="14" y="1" width="302" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="f9J-11-XgG">
+                        <rect key="frame" x="4" y="7" width="7" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="SyN-8M-naK"/>
+                            <constraint firstAttribute="height" constant="7" id="pT0-c4-h6P"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGJ-pi-eP8">
+                        <rect key="frame" x="20" y="22" width="117" height="34"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="bVZ-Dt-67S"/>
+                            <constraint firstAttribute="width" constant="117" id="h7N-Xo-X8t"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="select" backgroundImage="date-input">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="ClickOn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wKO-V3-bXo"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="CHD-GL-iyF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="2Od-3W-q34"/>
+                    <constraint firstItem="f9J-11-XgG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="5Bn-fY-Fva"/>
+                    <constraint firstItem="CHD-GL-iyF" firstAttribute="leading" secondItem="zGJ-pi-eP8" secondAttribute="trailing" constant="-123" id="8ec-sg-wbA"/>
+                    <constraint firstItem="zGJ-pi-eP8" firstAttribute="top" secondItem="f9J-11-XgG" secondAttribute="bottom" constant="8" id="Au2-KB-2C3"/>
+                    <constraint firstItem="f9J-11-XgG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="ByT-jw-bWG"/>
+                    <constraint firstItem="zGJ-pi-eP8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ebw-QL-jRl"/>
+                    <constraint firstItem="zGJ-pi-eP8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14" id="Kkc-cG-rPH"/>
+                    <constraint firstAttribute="trailing" secondItem="CHD-GL-iyF" secondAttribute="trailing" constant="-2" id="MWR-Kv-Xqb"/>
+                    <constraint firstItem="zGJ-pi-eP8" firstAttribute="top" secondItem="CHD-GL-iyF" secondAttribute="bottom" id="UKD-f5-Hvt"/>
+                    <constraint firstItem="zGJ-pi-eP8" firstAttribute="top" secondItem="CHD-GL-iyF" secondAttribute="bottom" constant="-1" id="b9h-Tg-F0M"/>
+                    <constraint firstItem="zGJ-pi-eP8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ba7-x9-0Uf"/>
+                    <constraint firstItem="zGJ-pi-eP8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cdq-kH-8AG"/>
+                    <constraint firstAttribute="bottom" secondItem="zGJ-pi-eP8" secondAttribute="bottom" id="i5X-RA-6HS"/>
+                    <constraint firstItem="CHD-GL-iyF" firstAttribute="leading" secondItem="f9J-11-XgG" secondAttribute="trailing" constant="3" id="nxa-OK-hKv"/>
+                    <constraint firstItem="CHD-GL-iyF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="wlI-JJ-07H"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Au2-KB-2C3"/>
+                        <exclude reference="Ebw-QL-jRl"/>
+                        <exclude reference="UKD-f5-Hvt"/>
+                        <exclude reference="b9h-Tg-F0M"/>
+                        <exclude reference="ba7-x9-0Uf"/>
+                        <exclude reference="i5X-RA-6HS"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dropDown" destination="zGJ-pi-eP8" id="JYK-rj-pON"/>
+                <outlet property="title" destination="CHD-GL-iyF" id="TNW-Uc-mSL"/>
+            </connections>
+            <point key="canvasLocation" x="390" y="307.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bullet" width="7" height="7"/>
+        <image name="date-input" width="64" height="30"/>
+    </resources>
+</document>

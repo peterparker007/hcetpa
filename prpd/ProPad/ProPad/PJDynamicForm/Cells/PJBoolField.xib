@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PJBoolField" rowHeight="60" id="iwT-zQ-k9s" customClass="PJBoolField">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iwT-zQ-k9s" id="ksE-sV-SnW">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17k-fV-vDA" customClass="CustomView">
+                        <rect key="frame" x="4" y="0.0" width="312" height="51"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g51-OI-QfN">
+                        <rect key="frame" x="263" y="14" width="51" height="31"/>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bool Field" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atv-K2-b6r">
+                        <rect key="frame" x="8" y="19" width="77" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="g51-OI-QfN" secondAttribute="centerY" id="41l-Qk-nzJ"/>
+                    <constraint firstItem="atv-K2-b6r" firstAttribute="leading" secondItem="ksE-sV-SnW" secondAttribute="leadingMargin" id="HnK-hC-C9w"/>
+                    <constraint firstAttribute="trailing" secondItem="17k-fV-vDA" secondAttribute="trailing" constant="4" id="N5q-Tb-FYW"/>
+                    <constraint firstAttribute="bottom" secondItem="17k-fV-vDA" secondAttribute="bottom" constant="8" id="OU5-Dg-b4B"/>
+                    <constraint firstItem="g51-OI-QfN" firstAttribute="trailing" secondItem="ksE-sV-SnW" secondAttribute="trailingMargin" id="ZHf-FK-Li5"/>
+                    <constraint firstItem="17k-fV-vDA" firstAttribute="leading" secondItem="ksE-sV-SnW" secondAttribute="leading" constant="4" id="i00-LT-vhm"/>
+                    <constraint firstItem="17k-fV-vDA" firstAttribute="top" secondItem="ksE-sV-SnW" secondAttribute="top" id="tiH-8W-970"/>
+                    <constraint firstAttribute="centerY" secondItem="atv-K2-b6r" secondAttribute="centerY" id="w5U-aE-nof"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="switchControl" destination="g51-OI-QfN" id="sna-2O-XEQ"/>
+                <outlet property="title" destination="atv-K2-b6r" id="O8c-mM-JLn"/>
+            </connections>
+            <point key="canvasLocation" x="388" y="226"/>
+        </tableViewCell>
+    </objects>
+</document>

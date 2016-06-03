@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PJListViewController">
+            <connections>
+                <outlet property="btnClearAll" destination="Mt4-Di-Fcu" id="wiE-0t-FNn"/>
+                <outlet property="btnSelectAll" destination="P7P-8T-wX3" id="CyN-SW-2bq"/>
+                <outlet property="buttonContainer" destination="Pz5-6m-BWN" id="xiH-9u-Rk0"/>
+                <outlet property="heightConstraintButtons" destination="Qkg-DH-yxY" id="EVq-47-YBc"/>
+                <outlet property="tableView" destination="R4m-yq-0Si" id="PKG-zY-s7x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="R4m-yq-0Si">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="560"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pz5-6m-BWN">
+                    <rect key="frame" x="0.0" y="560" width="600" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt4-Di-Fcu">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Clear All">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clearAction:" destination="-1" eventType="touchUpInside" id="fmi-gt-6LX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7P-8T-wX3">
+                            <rect key="frame" x="300" y="0.0" width="300" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Select All">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectAllAction:" destination="-1" eventType="touchUpInside" id="IGC-QK-w6x"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Mt4-Di-Fcu" firstAttribute="leading" secondItem="Pz5-6m-BWN" secondAttribute="leading" id="8Ki-2W-Y2L"/>
+                        <constraint firstAttribute="bottom" secondItem="Mt4-Di-Fcu" secondAttribute="bottom" id="BS4-SR-JK4"/>
+                        <constraint firstItem="P7P-8T-wX3" firstAttribute="leading" secondItem="Mt4-Di-Fcu" secondAttribute="trailing" id="Ofv-fR-bEI"/>
+                        <constraint firstAttribute="height" constant="40" id="Qkg-DH-yxY"/>
+                        <constraint firstItem="P7P-8T-wX3" firstAttribute="width" secondItem="Mt4-Di-Fcu" secondAttribute="width" id="Xaq-yn-Nly"/>
+                        <constraint firstAttribute="trailing" secondItem="P7P-8T-wX3" secondAttribute="trailing" id="ff4-lB-8xE"/>
+                        <constraint firstItem="Mt4-Di-Fcu" firstAttribute="top" secondItem="Pz5-6m-BWN" secondAttribute="top" id="lBE-Ex-nLM"/>
+                        <constraint firstItem="P7P-8T-wX3" firstAttribute="centerY" secondItem="Mt4-Di-Fcu" secondAttribute="centerY" id="s2s-Va-R5A"/>
+                        <constraint firstItem="P7P-8T-wX3" firstAttribute="height" secondItem="Mt4-Di-Fcu" secondAttribute="height" id="zrk-8y-JEt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Pz5-6m-BWN" secondAttribute="bottom" id="Aw8-Tp-aoX"/>
+                <constraint firstAttribute="trailing" secondItem="R4m-yq-0Si" secondAttribute="trailing" id="LL3-UI-91s"/>
+                <constraint firstItem="R4m-yq-0Si" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zu1-8U-Raw"/>
+                <constraint firstItem="R4m-yq-0Si" firstAttribute="trailing" secondItem="Pz5-6m-BWN" secondAttribute="trailing" id="tJd-zc-M6Q"/>
+                <constraint firstItem="R4m-yq-0Si" firstAttribute="leading" secondItem="Pz5-6m-BWN" secondAttribute="leading" id="wmp-J4-SKk"/>
+                <constraint firstItem="R4m-yq-0Si" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xJ3-dG-q0w"/>
+                <constraint firstItem="Pz5-6m-BWN" firstAttribute="top" secondItem="R4m-yq-0Si" secondAttribute="bottom" id="yNB-Gn-EPm"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
